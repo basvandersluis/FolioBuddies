@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.25px;
+   
+}
+
+.nav-style {
+    color: #1E1E24;
+    
+}
+
+.nav-item-1 {
+    display: flex;
+    width: 10%;
+}
