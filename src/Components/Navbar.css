@@ -1,18 +1,42 @@
+
+
 .nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     text-align: right;
     letter-spacing: 0.25px;
-   
+    background: #F9F0F1;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.24);
+    width: 100%vw;
+    height: 60px;
 }
 
-.nav-style {
-    color: #1E1E24;
-    
+.nav a:hover {
+    color: black;
 }
 
-.nav-item-1 {
-    display: flex;
-    width: 10%;
+.nav-link {
+    color: rgba(30, 30, 36, 1);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 11px;
+}
+
+.nav-item-foliobuddies {
+    margin-left: 40px;
+}
+
+.nav-item-home{
+    margin-right: 13px;
+}
+
+.nav-item-signup{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.nav-item-login {
+    margin-left: 12px;
+    margin-right: 40px;
 }

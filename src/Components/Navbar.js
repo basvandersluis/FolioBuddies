@@ -4,20 +4,20 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <nav className="nav-style">
-        <li className="nav-item-1 ">
+      <ul className="nav">
+        <img src="" alt=""/>
+        <li className="nav-item-foliobuddies mr-auto p-2">
              <a className="nav-link" href="#">FolioBuddies</a>
         </li>
-        <ul className="nav">
-            
-            <li className="nav-item">
-                <a className="nav-link" href="#">HOME</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">SIGN UP</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">LOG IN</a>
-            </li>
+        <li className="nav-item-home">
+            <a className="nav-link" href="#">HOME</a>
+        </li>
+        <li className="nav-item-signup">
+            <a className="nav-link" href="#">SIGN UP</a>
+        </li>
+        <li className="nav-item-login">
+            <a className="nav-link" href="#">LOG IN</a>
+        </li>
         </ul>
       {/* <ul>
         <li><Link to='/'>Home</Link></li>

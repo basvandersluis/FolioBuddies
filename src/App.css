@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: aileron, sans-serif;
+  src: local('aileron'), url(fonts/aileron/Aileron-Black.otf);
+} */
+
 .App {
   text-align: center;
 }
