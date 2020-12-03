@@ -7,7 +7,7 @@ const Navbar = () => {
       <ul className="nav">
         <img src="" alt=""/>
         <li className="nav-item-foliobuddies mr-auto p-2">
-             <a className="nav-link" href="#">FolioBuddies</a>
+             <a className="nav-link-foliobuddies" href="#">Folio<b>Buddies</b></a>
         </li>
         <li className="nav-item-home">
             <a className="nav-link" href="#">HOME</a>

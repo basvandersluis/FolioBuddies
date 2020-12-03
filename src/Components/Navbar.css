@@ -27,6 +27,17 @@
     margin-left: 40px;
 }
 
+.nav-link-foliobuddies{
+    color: rgba(30, 30, 36, 1);
+    font-size: 26px;
+    line-height: 11px;
+    
+}
+
+.nav-item-foliobuddies a:hover {
+    text-decoration: none;
+}
+
 .nav-item-home{
     margin-right: 13px;
 }
