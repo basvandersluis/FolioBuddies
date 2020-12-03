@@ -1,0 +1,58 @@
+.section1-style {
+  background-color: #f9f0f1;
+  height: 700px;
+  width: 100%vw;
+}
+
+.section2-style {
+  background-color: white;
+  height: 256px;
+  width: 100%vw;
+}
+
+.section3-style {
+  background-color: #f9f0f1;
+  height: 256px;
+  width: 100%vw;
+}
+
+.section4-style {
+  background-color: white;
+  height: 256px;
+  width: 100%vw;
+}
+
+.section5-style {
+  background-color: #f9f0f1;
+  height: 256px;
+  width: 100%vw;
+}
+
+.section6-style {
+  background-color: white;
+  height: 700px;
+  width: 100%vw;
+}
+
+.section7-style {
+  background-color: #f9f0f1;
+  height: 256px;
+  width: 100%vw;
+}
+
+.section8-style {
+  background-color: white;
+  height: 256px;
+  width: 100%vw;
+}
+
+.footer {
+  width: 100%vw;
+  height: 60px;
+  background-color: #f9f0f1;
+  letter-spacing: 0.25px;
+}
+
+.footer-item {
+    list-style-type: none;
+}
