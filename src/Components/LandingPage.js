@@ -7,18 +7,23 @@ export default class LandingPage extends Component {
         return (
             <div>
                 <section className="section1-style">
-                    <h1>Portfolios can be scary.</h1>
-                    <br/>
-                    <h2>You don't have to work 
-                    <br/>
-                    on yours alone!</h2>
-                    <p>Work together with a fellow junior developer or
-                    <br/>
-                    designer on your portfolios. Get your portfolio both
-                    <br/>
-                    pixel perfect and perfectly functional while gaining
-                    <br/>
-                    collaborative experience on the way!</p>
+                    <div>
+                        <h1>Portfolios can be scary.</h1>
+                        <br/>
+                        <h2>You don't have to work 
+                            <br/>
+                        on yours alone!</h2>
+                        <p>Work together with a fellow junior developer or
+                        <br/>
+                        designer on your portfolios. Get your portfolio both
+                        <br/>
+                        pixel perfect and perfectly functional while gaining
+                        <br/>
+                        collaborative experience on the way!</p>
+                    </div>
+                    <div>
+                        <img src="" alt=""/>
+                    </div>
                     <Button variant="contained" color="primary">SIGN UP</Button>
                     <Button variant="contained" color="primary">LEARN MORE</Button>
                 </section>
