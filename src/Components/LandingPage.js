@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Button from '@material-ui/core/Button';
 import './LandingPage.css';
+import Hero from '../Assets/Illustrations/Hero.png'
+
 
 export default class LandingPage extends Component {
     render() {
@@ -22,10 +24,10 @@ export default class LandingPage extends Component {
                         collaborative experience on the way!</p>
                     </div>
                     <div>
-                        <img src="" alt=""/>
+                        <img src={Hero} alt="Hero"/>
                     </div>
                     <Button variant="contained" color="primary">SIGN UP</Button>
-                    <Button variant="contained" color="primary">LEARN MORE</Button>
+                    <Button variant="outlined" color="primary">LEARN MORE</Button>
                 </section>
                 <section className="section2-style">
                     <h4>So, how does it work?</h4>
