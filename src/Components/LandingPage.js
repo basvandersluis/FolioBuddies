@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Button from '@material-ui/core/Button';
 import './LandingPage.css';
-import Hero from '../Assets/Illustrations/Hero.png'
+import Hero from '../Assets/Illustrations/Hero.png';
+import { MemoryRouter as Router } from 'react-router';
+import { Link as RouterLink } from 'react-router-dom';
 
 
 export default class LandingPage extends Component {
@@ -26,8 +28,13 @@ export default class LandingPage extends Component {
                     <div>
                         <img src={Hero} alt="Hero"/>
                     </div>
-                    <Button variant="contained" color="primary">SIGN UP</Button>
-                    <Button variant="outlined" color="primary">LEARN MORE</Button>
+                    <Router>
+                        <div>
+                            <RouterLink ref= {ref} to="/Signup"/>
+                            <Button variant="contained" color="primary" component={RouterLink} to="/Signup">SIGN UP</Button>
+                            <Button variant="outlined" color="primary">LEARN MORE</Button>
+                        </div>
+                    </Router>
                 </section>
                 <section className="section2-style">
                     <h4>So, how does it work?</h4>

@@ -10,9 +10,9 @@ export default function Signup() {
         <Button variant="outlined" color="primary">SIGN UP WITH LINKEDIN</Button>
         <br/>
         <p>or</p>
+        <p>You allready signed up?<Link to="/Login" className="nav-link">Log in here.</Link></p>
         <Button variant="contained" color="primary">SIGN UP</Button>
-        <Button variant="outlined" color="primary">Cancel</Button>
-        <p>You are already signet up?<Link to="/Login" className="nav-link">Log in here.</Link></p>
+        <Button variant="outlined" color="primary">CANCEL</Button>
 
     </div>
   
