@@ -2,14 +2,16 @@ import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 // import Elevations from 'react-native-elevation'
+import { animateScroll as scroll} from 'react-scroll';
  
 const Navbar = () => {
   return (
     <nav className="nav-style">
+    
       <ul className="nav">
         <img src="" alt=""/>
         <li className="nav-item-foliobuddies mr-auto p-2">
-            <Link to="/" className="nav-link-foliobuddies">Folio<b>Buddies</b></Link>
+            <Link to="/" className="nav-link-foliobuddies" onClick={() => scroll.scrollToTop()}>Folio<b>Buddies</b></Link>
         </li>
         <li className="nav-item-home">
             <Link to="/" className="nav-link">HOME</Link>

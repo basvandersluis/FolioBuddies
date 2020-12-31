@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Button from '@material-ui/core/Button';
 import './LandingPage.css';
 import Hero from '../Assets/Illustrations/Hero.png';
-import { MemoryRouter as Router } from 'react-router';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
+
 
 
 export default class LandingPage extends Component {
@@ -28,13 +28,10 @@ export default class LandingPage extends Component {
                     <div>
                         <img src={Hero} alt="Hero"/>
                     </div>
-                    <Router>
                         <div>
-                            <RouterLink ref= {ref} to="/Signup"/>
-                            <Button variant="contained" color="primary" component={RouterLink} to="/Signup">SIGN UP</Button>
-                            <Button variant="outlined" color="primary">LEARN MORE</Button>
+                            <Button variant="contained" color="primary" href="Signup">SIGN UP</Button>
+                            <Button variant="outlined" color="primary"><Link to="section2-style" smooth={true} duration={1000}>LEARN MORE</Link></Button>
                         </div>
-                    </Router>
                 </section>
                 <section className="section2-style">
                     <h4>So, how does it work?</h4>
@@ -95,7 +92,7 @@ export default class LandingPage extends Component {
                         <br/>
                         other juniors just like themselves.
                         </p>
-                        <Button variant="contained" color="primary">SIGN UP</Button>
+                        <Button variant="contained" color="primary" href="Signup">SIGN UP</Button>
                     </div>
                     <h4>Reasons to work together</h4>
                     <div>Get the portfolio YOU want!</div>
@@ -111,7 +108,7 @@ export default class LandingPage extends Component {
                 <section className="section8-style">
                     <h4>Find a buddy today</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, repellat fuga iste deserunt eius quibusdam recusandae corrupti, in corporis eum reiciendis. Quo magnam perferendis natus nam ducimus maxime voluptas. Accusantium?</p>
-                    <Button variant="contained" color="primary">SIGN UP</Button>
+                    <Button variant="contained" color="primary" href="Signup">SIGN UP</Button>
                 </section>
                 <footer className="footer">
                     <ul>
