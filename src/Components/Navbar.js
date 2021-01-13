@@ -7,7 +7,6 @@ import { animateScroll as scroll} from 'react-scroll';
 const Navbar = () => {
   return (
     <nav className="nav-style">
-    
       <ul className="nav">
         <img src="" alt=""/>
         <li className="nav-item-foliobuddies mr-auto p-2">
@@ -23,10 +22,6 @@ const Navbar = () => {
             <Link to="/Login" className="nav-link">LOG IN</Link>
         </li>
         </ul>
-      {/* <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/about'>About</Link></li>
-      </ul> */}
     </nav>
   )
 }

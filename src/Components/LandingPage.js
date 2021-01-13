@@ -3,13 +3,14 @@ import Button from '@material-ui/core/Button';
 import './LandingPage.css';
 import Hero from '../Assets/Illustrations/Hero.png';
 import { Link } from 'react-scroll';
+import Theme from './ButtonTheme';
 
 
 
 export default class LandingPage extends Component {
     render() {
         return (
-            <div>
+            <div className="landingpage">
                 <section className="section1-style">
                     <div>
                         <h1>Portfolios can be scary.</h1>
