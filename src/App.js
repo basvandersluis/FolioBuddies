@@ -1,19 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
 import LandingPage from './Components/LandingPage';
-import Button from '@material-ui/core/Button';
-
 import Signup from './Components/Signup';
 import Login from './Components/Login';
-  
-
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter style={{color: "#1E1E24"}}>
         <Navbar />
         <Switch>
           <Route path="/" exact component={LandingPage} />

@@ -1,15 +1,25 @@
 import React, { Component } from 'react'
-import Button from '@material-ui/core/Button';
 import './LandingPage.css';
 import Hero from '../Assets/Illustrations/Hero.png';
 import { Link } from 'react-scroll';
-import Theme from './ButtonTheme';
+import { createMuiTheme, ThemeProvider, Button } from '@material-ui/core';
 
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+      main: "#1E1E24"
+    }, 
+    secondary: {
+      main: "#1E1E24"
+    }
+  }
+});
 
 
 export default class LandingPage extends Component {
     render() {
         return (
+            <ThemeProvider theme={theme}>
             <div className="landingpage">
                 <section className="section1-style">
                     <div>
@@ -123,6 +133,7 @@ export default class LandingPage extends Component {
                     </ul>
                 </footer>
             </div>
+            </ThemeProvider>
         )
     }
 }
