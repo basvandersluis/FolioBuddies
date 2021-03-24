@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { useContext } from 'react';
+import { Redirect } from "react-router-dom";
+import { AuthContext } from "../App";
 import './LandingPage.css';
 import Hero from '../Assets/Illustrations/Hero.png';
 import { Link } from 'react-scroll';
@@ -15,14 +17,28 @@ const theme = createMuiTheme({
   }
 });
 
+export default function LandingPage() {
+// export default class LandingPage extends Component {
+    // render() {
+        const { state, dispatch } = useContext(AuthContext);
 
-export default class LandingPage extends Component {
-    render() {
+  if (!state.isLoggedIn) {
+    return <Redirect to="/Login" />;
+  }
+
+//   const { avatar_url, name, public_repos, followers, following } = state.user
+
+  const handleLogout = () => {
+    dispatch({
+      type: "LOGOUT"
+    });
+  } 
         return (
             <ThemeProvider theme={theme}>
             <div className="landingpage">
                 <section className="section1-style">
                     <div>
+                           
                         <h1>Portfolios can be scary.</h1>
                         <br/>
                         <h2>You don't have to work 
@@ -121,7 +137,7 @@ export default class LandingPage extends Component {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, repellat fuga iste deserunt eius quibusdam recusandae corrupti, in corporis eum reiciendis. Quo magnam perferendis natus nam ducimus maxime voluptas. Accusantium?</p>
                     <Button variant="contained" color="primary" href="Signup">SIGN UP</Button>
                 </section>
-                <footer className="footer">
+                {/* <footer className="footer">
                     <ul>
                         <li>
                             <a className="footer-item" href="#">PRIVACY POLICY</a>  
@@ -131,9 +147,9 @@ export default class LandingPage extends Component {
                         </li>
                         <p class="ml-auto p-2">MADE WITH LOVE IN EUROPE</p>
                     </ul>
-                </footer>
+                </footer> */}
             </div>
             </ThemeProvider>
         )
     }
-}
+// }
